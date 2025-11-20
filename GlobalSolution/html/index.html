@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>PromptBox · Future at Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="PromptBox é um painel futurista para organizar, otimizar e padronizar o uso de IA por times de trabalho. Uma solução pensada para o futuro do trabalho."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</head>
+<body>
+  <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <div class="header-left">
+        <img src="../assets/fiaplogo.png" alt="FIAP" class="logo-fiap" />
+        <img src="../assets/global.logo.png" alt="Global Solution" class="logo-global" />
+      </div>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+      >
+        <img src="../assets/hamburguer.png" alt="Menu" class="hamburger-icon" />
+      </button>
+    </div>
+  </header>
+
+  <nav class="fullscreen-menu" id="fullscreen-menu" aria-label="Navegação principal">
+    <div class="fullscreen-menu-header">
+      <div class="menu-header-left">
+        <img src="../assets/fiaplogo.png" alt="FIAP" class="logo-fiap" />
+        <img src="../assets/global.logo.png" alt="Global Solution" class="logo-global" />
+      </div>
+      <button
+        class="menu-close"
+        id="menu-close"
+        aria-label="Fechar menu de navegação"
+      >
+        <span>×</span>
+      </button>
+    </div>
+    <ul class="fullscreen-menu-list">
+      <li><span class="menu-number">01</span><a href="#desafio">DESAFIO</a></li>
+      <li><span class="menu-number">02</span><a href="#solucao">SOLUÇÃO</a></li>
+      <li><span class="menu-number">03</span><a href="#persona">PERSONA</a></li>
+      <li><span class="menu-number">04</span><a href="#sec-fluxo">FLUXO</a></li>
+      <li><span class="menu-number">05</span><a href="#acessibilidade">ACESSIBILIDADE</a></li>
+      <li><span class="menu-number">06</span><a href="#contato">CONTATO</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo-principal">
+    
+    <section class="hero" aria-labelledby="hero-titulo">
+      <video class="hero-video-bg" autoplay muted loop playsinline>
+        <source src="../assets/hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker">Future at Work · IA na vida real</p>
+          <h1 id="hero-titulo">
+            Onde seus prompts viram sistema.
+          </h1>
+          <h2 class="hero-subtitle">
+            Fluxos inteligentes para equipes que usam IA todos os dias. 
+          
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#solucao">
+              Explorar solução
+            </a>
+            <a class="btn btn-outline" href="#persona">
+              Ver persona e contexto
+            </a>
+          </div>
+
+          <p class="hero-note">
+            Projeto conceitual desenvolvido para a Global Solution FIAP · Tema: O Futuro do Trabalho.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-glow-backdrop"></div>
+
+          <div class="hero-square">
+            <div class="hero-square-inner">
+              <span class="hero-logo">Prompt<br>Box</span>
+            </div>
+          </div>
+
+          <div class="hero-metadata">
+            <div class="hero-chip">
+              <span class="chip-dot"></span>
+              IA como colega de time
+            </div>
+            <div class="hero-meta-lines">
+              <span>Workspaces por setor</span>
+              <span>Biblioteca de prompts</span>
+              <span>Consistência e produtividade</span>
+            </div>
+          </div>
+
+          <div class="hero-particles" id="hero-particles"></div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section-desafio" id="desafio" aria-labelledby="sec-desafio">
+      <div class="desafio-glow-top"></div>
+      <div class="desafio-glow-bottom"></div>
+      <div class="desafio-lines"></div>
+      <div class="desafio-particles" id="desafio-particles"></div>
+      
+      <div class="container">
+        <div class="desafio-header">
+          <p class="desafio-kicker">DESAFIO</p>
+          <h2 id="sec-desafio" class="desafio-title">
+            O futuro do trabalho já chegou, mas o uso de IA nas empresas ainda é caótico.
+          </h2>
+          <p class="desafio-description">
+            Profissionais de marketing, atendimento, financeiro, produto e tantas outras áreas já usam
+            inteligência artificial todos os dias. O problema não é acesso à tecnologia, e sim a forma
+            improvisada como prompts são criados, testados e reaproveitados.
+          </p>
+        </div>
+
+        <div class="desafio-cards">
+          <article class="desafio-card">
+            <h3>O cenário atual</h3>
+            <p>
+              Em muitas empresas, cada pessoa cria seus próprios prompts em abas soltas, prints,
+              rascunhos ou arquivos perdidos. Isso gera:
+            </p>
+            <ul>
+              <li>respostas inconsistentes para clientes e parceiros;</li>
+              <li>repetição de trabalho em diferentes times;</li>
+              <li>dependência de “gurus da IA” internos;</li>
+              <li>dificuldade para documentar o que funciona.</li>
+            </ul>
+          </article>
+
+          <article class="desafio-card">
+            <h3>O que o futuro exige</h3>
+            <p>
+              No futuro do trabalho, IA deixa de ser “uma novidade” e se torna parte invisível do fluxo
+              de trabalho. Isso exige:
+            </p>
+            <ul>
+              <li>processos claros para criação e revisão de prompts;</li>
+              <li>workspaces organizados por setor e objetivo;</li>
+              <li>compartilhamento simples entre colegas e líderes;</li>
+              <li>aprendizado contínuo baseado no que deu certo.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section section-alt" id="solucao" aria-labelledby="sec-solucao">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Solução</p>
+          <h2 id="sec-solucao">PromptBox: um painel para organizar o cérebro de IA da empresa.</h2>
+          <p class="section-subtitle">
+            PromptBox é um produto digital que transforma prompts individuais
+            em um <strong>sistema organizável, colaborativo e escalável</strong>, alinhado à estratégia
+            da empresa e ao futuro do trabalho.
+          </p>
+        </header>
+
+        <div class="grid grid-3">
+          <article class="card card-glass">
+            <p class="card-tag">01 · Workspaces por setor</p>
+            <h3>Marketing, Comercial, Financeiro &amp; mais</h3>
+            <p>
+              Cada time tem um espaço próprio com seus prompts favoritos, campanhas, scripts de atendimento,
+              análises e relatórios. Nada mais de “cadê aquele prompt que funcionou ontem?”.
+            </p>
+          </article>
+
+          <article class="card card-glass">
+            <p class="card-tag">02 · Biblioteca viva de prompts</p>
+            <h3>Do improviso ao sistema</h3>
+            <p>
+              Prompts passam a ser versões vivas, comentadas e melhoradas coletivamente. A empresa constrói
+              uma biblioteca própria de inteligência, em vez de depender só de exemplos genéricos da internet.
+            </p>
+          </article>
+
+          <article class="card card-glass">
+            <p class="card-tag">03 · IA conectada ao trabalho real</p>
+            <h3>Resultados, não só respostas</h3>
+            <p>
+              O foco não é “perguntar coisas para a IA”, mas desenhar fluxos de uso:
+              atendimento, proposta, revisão, relatório — sempre com prompts claros e replicáveis.
+            </p>
+          </article>
+        </div>
+
+        <div class="layout-highlight">
+          <div class="highlight-text">
+            <h3>Como isso se conecta ao Futuro do Trabalho?</h3>
+            <p>
+              Em vez de substituir profissionais, o PromptBox propõe que a IA se torne um
+              <strong>colega de time</strong>: presente no dia a dia, ajudando a pensar, escrever,
+              testar hipóteses e acelerar tarefas repetitivas. A habilidade central deixa de ser
+              “decorar ferramentas” e passa a ser <strong>estruturar prompts e processos</strong>.
+            </p>
+          </div>
+          <div class="highlight-micro">
+            <p class="highlight-label">Exemplo de aplicação</p>
+            <p class="highlight-body">
+              O time comercial cadastra um fluxo de prompts para negociação B2B.
+              O time de marketing reaproveita esse fluxo em campanhas. Novos colaboradores
+              encontram tudo pronto no primeiro dia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="section" id="persona" aria-labelledby="sec-persona">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Persona</p>
+          <h2 id="sec-persona">Quem é a pessoa usuária ideal do PromptBox?</h2>
+        </header>
+
+        <article class="persona-card">
+          <div class="persona-main">
+            <p class="persona-label">Persona principal</p>
+            <h3 class="persona-name">Lucas, 32 anos — Gestor de Marketing Digital</h3>
+            <p class="persona-meta">
+              Trabalha em uma empresa de médio porte. Usa IA todos os dias para criar campanhas,
+              roteiros de vídeo, e-mails e relatórios. Já testou várias ferramentas, mas sente
+              que o uso da IA é pouco organizado no time.
+            </p>
+            <h4>Desafios</h4>
+            <ul>
+              <li>Prompts espalhados em documentos, prints, chats e abas de navegador;</li>
+              <li>dificuldade em padronizar a comunicação da marca ao usar IA;</li>
+              <li>tempo perdido explicando “como pedir as coisas para a IA” aos novos membros;</li>
+              <li>não consegue dar vida ao que tem em mente com o prompt.</li>
+            </ul>
+          </div>
+
+          <div class="persona-side">
+            <h4>Como o PromptBox ajuda</h4>
+            <ul>
+              <li>Centraliza os prompts do time em um painel único, com pastas por campanha e objetivo;</li>
+              <li>permite criar áreas por setor (marketing, financeiro, comercial, atendimento);</li>
+              <li>facilita compartilhar fluxos prontos com novos colaboradores e parceiros;</li>
+              <li>estimula um uso mais estratégico, responsável e consistente de IA.</li>
+              <li>refinamento de prompts e Prompt Expansion -JSON, TOON-</li>
+            </ul>
+            <p class="persona-note">
+              A solução também pode ser utilizada por outros perfis, como estudantes em busca do primeiro emprego, mas o foco
+              está em profissionais que já dependem de IA para entregar resultados melhores e mais rápidos.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    
+    <div class="arena-wrapper">
+    <section class="section section-alt" aria-labelledby="sec-fluxo">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Fluxo de uso</p>
+          <h2 id="sec-fluxo">Arquitetura de prompt em 3 passos.</h2>
+        </header>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h3>Mapear times e necessidades</h3>
+            <p>
+              A empresa identifica os principais setores que já usam IA (marketing, vendas,
+              atendimento, financeiro, produto) e quais tarefas mais se beneficiam de prompts.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h3>Organizar e testar prompts</h3>
+            <p>
+              Cada time cadastra seus prompts atuais no PromptBox, sempre associados a objetivos
+              claros. A partir daí surgem versões otimizadas, comentadas e testadas em conjunto.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <h3>Escalar com consistência</h3>
+            <p>
+              Novos projetos e pessoas já entram com um ponto de partida sólido. A IA passa a ser
+              parte do fluxo de trabalho, e não um elemento improvisado em paralelo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="acessibilidade" aria-labelledby="sec-acessibilidade">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Acessibilidade</p>
+          <h2 id="sec-acessibilidade">Pensando o futuro do trabalho também para quem navega de formas diferentes.</h2>
+        </header>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Recursos aplicados</h3>
+            <ul class="list-tight">
+              <li>Estrutura semântica com <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> e <code>&lt;nav&gt;</code>;</li>
+              <li>link “Pular para o conteúdo principal” para pessoas que usam teclado ou leitor de tela;</li>
+              <li>hierarquia de títulos organizada (h1, h2, h3, h4);</li>
+              <li>contraste elevado entre fundo escuro e textos claros;</li>
+              <li>estados de foco visíveis em botões e links (<code>:focus-visible</code>);</li>
+              <li>descrições claras em botões, rótulos de formulário e ícones.</li>
+              <li>integração com VLibras para tradução em Libras.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Por que isso importa no contexto da GS?</h3>
+            <p>
+              O futuro do trabalho não é apenas tecnológico — é também inclusivo. Ao aplicar boas práticas
+              de acessibilidade em uma landing page com estética futurista, mostramos que experiências avançadas
+              podem (e devem) ser acessíveis para diferentes perfis de uso, dispositivos e habilidades.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    
+    <section class="section section-cta" id="contato" aria-labelledby="sec-contato">
+      <div class="container cta-grid">
+        <div class="cta-text">
+          <p class="section-kicker">Próximo passo</p>
+          <h2 id="sec-contato">E se seu time tratasse a IA como membro oficial da equipe?</h2>
+          <p class="section-subtitle">
+            Este formulário é uma simulação típica de produto digital. Ele demonstra como o PromptBox poderia
+            capturar interesse de empresas que desejam organizar seu uso de IA e preparar equipes para o futuro do trabalho.
+          </p>
+        </div>
+
+        <div class="cta-form-wrapper">
+          <form class="cta-form" aria-label="Formulário de interesse no PromptBox (simulação)">
+            <div class="form-field">
+              <label for="nome">Nome completo</label>
+              <input id="nome" name="nome" type="text" placeholder="Digite seu nome" />
+            </div>
+
+            <div class="form-field">
+              <label for="email">E-mail profissional</label>
+              <input id="email" name="email" type="email" placeholder="voce@empresa.com" />
+            </div>
+
+            <div class="form-field">
+              <label for="area">Área em que atua</label>
+              <select id="area" name="area">
+                <option value="">Selecione uma opção</option>
+                <option>Marketing / Growth</option>
+                <option>Comercial / Vendas</option>
+                <option>Atendimento / Suporte</option>
+                <option>Financeiro / Backoffice</option>
+                <option>Produto / Operações</option>
+                <option>Outra</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="msg">Como seu time usa IA hoje?</label>
+              <textarea id="msg" name="msg" placeholder="Conte em poucas linhas como vocês usam IA no dia a dia..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              Enviar interesse (simulação)
+            </button>
+            <p class="form-note">
+              Nenhum dado real é coletado. Este formulário existe apenas para fins de demonstração no projeto da Global Solution.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>PromptBox · Projeto acadêmico FIAP – Global Solution · Future at Work</p>
+      <p>Landing page desenvolvida em HTML, CSS e JavaScript · Design por Emanuel Eidt.</p>
+    </div>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  
+  <script src="../js/script.js"></script>
+</body>
+</html>
